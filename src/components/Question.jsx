@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import '../css/Question.css';
+import '../sample.data';
 // import components
 
 
 class Question extends Component {
   
-  constructor(props)
-
   render() {
     let questionList = ["In which film did Bill Murray play the character Dr. Peter Venkman?",
   "On 'Legally Blonde', what is Warner's nickname for Elle?", 
