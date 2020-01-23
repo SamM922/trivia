@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
+import AnswerOption from 'AnswerOption.jsx';
 import '../css/AnswersBox.css';
 
 class AnswersBox extends Component {
-  
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         let answerOptions = [];
-        let answerOptions_ = [];
+        let answerBoxes = [];
         for(let i = 0; i > answerOptions.length; i++) {
-            answerOptions_.push(<AnswerOption title={answerOptions[i]}/>);
+            answerBoxes.push(<AnswerOption text={answerOptions[i]}/>);
         }
       return (
         <div>
-            
+              {answerBoxes}
         </div>
       );
     }
