@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../css/Question.css';
-import '../sample.data';
+import '../sample.data.json';
 // import components
 
 
