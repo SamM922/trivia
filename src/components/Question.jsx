@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import '../css/Question.css';
 // import components
 
 
 class Question extends Component {
   
+  constructor(props)
+
   render() {
     let questionList = ["In which film did Bill Murray play the character Dr. Peter Venkman?",
   "On 'Legally Blonde', what is Warner's nickname for Elle?", 
@@ -15,7 +18,6 @@ class Question extends Component {
     return (
       <div>
         <h1> In which film did Bill Murray play the character Dr. Peter Venkman?</h1>
-        Add your QuestionText, Reset Button and AnswerButtons here.  
       </div>
     );
   }
