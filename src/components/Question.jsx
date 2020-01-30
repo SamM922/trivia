@@ -5,13 +5,20 @@ import question from'../sample_data.json';
 
 
 class Question extends Component {
+  constructor(props) {
+    super(props);
+  }
   
-  render() {
-    let questionData = question;
 
+  handleClick() {
+    var nextQuestion = this.state.nextQuestion + 1;
     let questionList = ["In which film did Bill Murray play the character Dr. Peter Venkman?",
   "On 'Legally Blonde', what is Warner's nickname for Elle?", 
   "What was the name of Jack Black's character in the movie 'School of Rock'?"];
+  }  
+  
+  render() {
+    let questionData = question;
 
     for (let i = 0; i < questionData; i++){
       
@@ -19,7 +26,7 @@ class Question extends Component {
 
     return (
       <div>
-        <h1> </h1>
+        <button onClick={()=> this.handleClick()}>Next</button>
       </div>
     );
   }
