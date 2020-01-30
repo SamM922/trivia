@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../css/Question.css';
-import question from'../sample_data.json';
-// import components
+import { data } from '/data.js';
 
 
 class Question extends Component {
