@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../css/Question.css';
-import { data } from '/data.js';
+import { data } from '../data.json';
 
 
 class Question extends Component {

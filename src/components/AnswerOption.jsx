@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../css/AnswerOption.css';
-import { data } from '/data.js';
+import { data } from '../data.js';
 
 class AnswerOption extends Component {
     constructor(props) {

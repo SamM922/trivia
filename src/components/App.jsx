@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../css/App.css';
 import Question from '../components/Question';
+import { data } from '../data.json';
 // import components
 
 class App extends Component {
