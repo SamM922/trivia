@@ -16,7 +16,7 @@ export function buildFirebase() {
   }
 }
 
-export function getRandomQuestion(questions) {
+export default function getRandomQuestion(questions) {
   var keys = Object.keys(questions)
   const randomIndex = Math.floor(Math.random() * keys.length);
   return questions[keys[randomIndex]];

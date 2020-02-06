@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 import '../css/Question.css';
-import { data } from '../data.json';
-
 
 class Question extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props);
   }
-
+ 
+  
+  // constructor(choices, correct_choice_index, question_text, user_id) {
+  //   this.choices = choices;
+  //   this.correct_choice_index = correct_choice_index;
+  //   this.question_text = question_text;
+  //   this.user_id = user_id;
+  // }
   handleClick() {
     var nextQuestion = this.state.nextQuestion + 1;
   }  
@@ -16,6 +21,7 @@ class Question extends Component {
 
     return (
       <div>
+        <h1>{this.props.question_text}</h1>
         <button onClick={()=> this.handleClick()}>Next</button>
       </div>
     );

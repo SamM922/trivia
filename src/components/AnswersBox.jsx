@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import AnswerOption from 'AnswerOption.jsx';
 import '../css/AnswersBox.css';
-import { data } from '../data.json';
 
 class AnswersBox extends Component {
     constructor(props) {
