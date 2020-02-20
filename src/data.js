@@ -1,6 +1,5 @@
-{
-    "questions": {
-        "question1": {
+const questions =[
+    {
             "choices": [
                 "48",
                 "13",
@@ -11,7 +10,7 @@
             "question_text": "How many states are in the United States?",
             "user_id": "ZbCvDadaM0SD9YjAXrHMEDLVGoj2"
         },
-        "question2": {
+        {
             "choices": [
                 "C++",
                 "Python",
@@ -22,7 +21,7 @@
             "question_text": "What coding language is Minecraft made in?",
             "user_id": "ZbCvDadaM0SD9YjAXrHMEDLVGoj2"
         },
-        "question3": {
+        {
             "choices": [
                 "120",
                 "150",
@@ -33,5 +32,5 @@
             "question_text": "How long is a Code Nation class in minutes?",
             "user_id": "ZbCvDadaM0SD9YjAXrHMEDLVGoj2"
         }
-    }
-}
+    ]
+export default questions;

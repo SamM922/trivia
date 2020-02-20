@@ -9,7 +9,7 @@ class AnswerOption extends Component {
     render() {
       return (
         <div>
-            
+            {this.props.option}
         </div>
       );
     }

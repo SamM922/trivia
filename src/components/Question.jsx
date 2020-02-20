@@ -14,7 +14,7 @@ class Question extends Component {
   //   this.user_id = user_id;
   // }
   handleClick() {
-    var nextQuestion = this.state.nextQuestion + 1;
+    this.props.onNext();
   }  
   
   render() {
