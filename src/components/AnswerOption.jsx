@@ -5,12 +5,14 @@ class AnswerOption extends Component {
     constructor(props) {
         super(props);
     }
-
+    handleClick() {
+        this.props.handleAnswer(this.props.index)
+    }
     render() {
       return (
-        <div>
+        <button onClick={()=> this.handleClick()} class="answer">
             {this.props.option}
-        </div>
+        </button>
       );
     }
   }

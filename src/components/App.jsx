@@ -8,19 +8,21 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      questionNumber: 0
+      questionNumber: 0,
+      correctChoice: 3
     };
   }
-  //onAnswer = answer => {
-    //right or wrong
-    //if(amswer === this.state[this.state.questionNumber].correct_aswer_index {
-    //}
-  //};
   onNext = () => {
-    this.setState({ questionNumber: this.state.questionNumber + 1 });
+    this.setState({ questionNumber: this.state.questionNumber + 1, correctChoice: this.props.data[this.state.questionNumber + 1].correct_choice_index });
   };
+  handleAnswer = (index) => {
+    if (index === this.state.correctChoice) {
+        alert("Correct!");
+    } else {
+        alert("Incorrect!");
+    }
+  }
   render() {
-    const { answer } = this.state;
 
     return (
       <div className="app">
@@ -31,6 +33,7 @@ class App extends Component {
           onNext={this.onNext}
         />
         <AnswersBox
+          handleAnswer={this.handleAnswer}
           questionNumber={this.state.questionNumber}
           choices={this.props.data[this.state.questionNumber].choices}
           onNext={this.onNext}

@@ -33,4 +33,4 @@ const questions =[
             "user_id": "ZbCvDadaM0SD9YjAXrHMEDLVGoj2"
         }
     ]
-export default questions;
+//export default questions;
