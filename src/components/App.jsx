@@ -8,18 +8,16 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      questionNumber: 0,
-      answers: 0
+      questionNumber: 0
     };
   }
-  onAnswer = answer => {
+  //onAnswer = answer => {
     //right or wrong
     //if(amswer === this.state[this.state.questionNumber].correct_aswer_index {
     //}
-  };
+  //};
   onNext = () => {
     this.setState({ questionNumber: this.state.questionNumber + 1 });
-    this.setState({ answers: this.state.answers + 1 });
   };
   render() {
     const { answer } = this.state;
@@ -33,6 +31,7 @@ class App extends Component {
           onNext={this.onNext}
         />
         <AnswersBox
+          questionNumber={this.state.questionNumber}
           choices={this.props.data[this.state.questionNumber].choices}
           onNext={this.onNext}
         />
