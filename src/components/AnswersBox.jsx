@@ -13,7 +13,7 @@ class AnswersBox extends Component {
     }
     render() {
       return (
-        <div className="answers">
+        <div className="answerBox">
           <AnswerOption handleAnswer={this.handleAnswer} index={0} option={this.props.choices[0]}></AnswerOption>
           <AnswerOption handleAnswer={this.handleAnswer} index={1} option={this.props.choices[1]}></AnswerOption>
           <AnswerOption handleAnswer={this.handleAnswer} index={2} option={this.props.choices[2]}></AnswerOption>

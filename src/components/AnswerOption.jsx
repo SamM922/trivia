@@ -10,7 +10,7 @@ class AnswerOption extends Component {
     }
     render() {
       return (
-        <button onClick={()=> this.handleClick()} class="answer">
+        <button onClick={()=> this.handleClick()} class="answer wrap">
             {this.props.option}
         </button>
       );
