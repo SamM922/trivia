@@ -23,11 +23,32 @@ body {
   box-shadow: 0 5px #999;
   background-color: #e5dfdf;
 }
+.prev-button {
+  border: none;
+  cursor: pointer;
+  font-family: "Montserrat";
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  padding: 7px 13px;
+  box-shadow: 0 5px #999;
+  background-color: #e5dfdf;
+  margin-right: 20px;
+}
 .next-button:hover {
   background-color: white;
   border: none;
 }
+.prev-button:hover {
+  background-color: white;
+  border: none;
+}
 .next-button:active {
+  background-color: white;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.prev-button:active {
   background-color: white;
   box-shadow: 0 5px #666;
   transform: translateY(4px);

@@ -19,11 +19,22 @@ class App extends Component {
         .correct_choice_index
     });
   };
+  onPrev = () => {
+    if (this.state.questionNumber < 1) {
+      alert("This is the first question");
+    } else {
+      this.setState({
+        questionNumber: this.state.questionNumber - 1,
+        correctChoice: this.props.data[this.state.questionNumber - 1]
+          .correct_choice_index
+      });
+    }
+  };
   handleAnswer = index => {
     if (index === this.state.correctChoice) {
       alert("Correct! Click Next to Continue");
     } else {
-      alert("Incorrect! Try Again or Skip Question");
+      alert("Incorrect! Try Again or Skip this Question");
     }
   };
   render() {
@@ -35,6 +46,12 @@ class App extends Component {
           }
           onNext={this.onNext}
         />
+        <button className="prev-button" onClick={() => this.onPrev()}>
+          Previous
+        </button>
+        <button className="prev-button" onClick={() => this.onNext()}>
+          Next
+        </button>
         <AnswersBox
           handleAnswer={this.handleAnswer}
           questionNumber={this.state.questionNumber}

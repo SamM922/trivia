@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
-import '../css/Question.css';
+import React, { Component } from "react";
+import "../css/Question.css";
 
 class Question extends Component {
   constructor(props) {
     super(props);
   }
-
 
   // constructor(choices, correct_choice_index, question_text, user_id) {
   //   this.choices = choices;
@@ -18,11 +17,9 @@ class Question extends Component {
   }
 
   render() {
-
     return (
       <div>
         <h1>{this.props.question_text}</h1>
-        <button className="next-button" onClick={() => this.handleClick()}>Next</button>
       </div>
     );
   }
