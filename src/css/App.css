@@ -4,7 +4,18 @@ body {
 }
 
 .app {
+  background-image: linear-gradient(#6ba8a9, #1d4d4f);
   text-align: center;
+  background-color: white;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
 }
-
-
+.next-button {
+  font-family: "Montserrat";
+  border: 5px solid white;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}

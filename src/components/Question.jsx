@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import '../css/Question.css';
 
 class Question extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props);
   }
- 
-  
+
+
   // constructor(choices, correct_choice_index, question_text, user_id) {
   //   this.choices = choices;
   //   this.correct_choice_index = correct_choice_index;
@@ -15,14 +15,14 @@ class Question extends Component {
   // }
   handleClick() {
     this.props.onNext();
-  }  
-  
+  }
+
   render() {
 
     return (
       <div>
         <h1>{this.props.question_text}</h1>
-        <button onClick={()=> this.handleClick()}>Next</button>
+        <button className="next-button" onClick={() => this.handleClick()}>Next</button>
       </div>
     );
   }

@@ -1,12 +1,9 @@
-.answer{
-    border:5px double white;
-    border-radius: 5px;
-    font-size:40px;
-    margin:20px;
-    background-color:#1d4d4f;
-    color:white;
+.answer {
+  font-family: "Montserrat";
+  border: 5px double white;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  margin: 2%;
+  background-color: #1d4d4f;
+  color: white;
 }
-
-/* div{
-    background-color:#6ba8a9;
-} */
