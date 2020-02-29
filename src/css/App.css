@@ -13,9 +13,22 @@ body {
   border-radius: 5px;
 }
 .next-button {
+  border: none;
+  cursor: pointer;
   font-family: "Montserrat";
-  border: 5px solid white;
   border-radius: 5px;
   font-size: 1rem;
   outline: none;
+  padding: 7px 13px;
+  box-shadow: 0 5px #999;
+  background-color: #e5dfdf;
+}
+.next-button:hover {
+  background-color: white;
+  border: none;
+}
+.next-button:active {
+  background-color: white;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }

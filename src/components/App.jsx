@@ -13,17 +13,20 @@ class App extends Component {
     };
   }
   onNext = () => {
-    this.setState({ questionNumber: this.state.questionNumber + 1, correctChoice: this.props.data[this.state.questionNumber + 1].correct_choice_index });
+    this.setState({
+      questionNumber: this.state.questionNumber + 1,
+      correctChoice: this.props.data[this.state.questionNumber + 1]
+        .correct_choice_index
+    });
   };
-  handleAnswer = (index) => {
+  handleAnswer = index => {
     if (index === this.state.correctChoice) {
       alert("Correct! Click Next to Continue");
     } else {
       alert("Incorrect! Try Again or Skip Question");
     }
-  }
+  };
   render() {
-
     return (
       <div className="app">
         <Question
