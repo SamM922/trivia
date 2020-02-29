@@ -40,6 +40,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
+        <div className="question-index">{this.state.questionNumber + 1}</div>
         <Question
           question_text={
             this.props.data[this.state.questionNumber].question_text

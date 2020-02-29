@@ -1,8 +1,13 @@
 body {
   margin: 0;
   padding: 0;
+  align-items: center;
 }
-
+.question-index {
+  height: 25px;
+  width: 25px;
+  background-color: #1d4d4f;
+}
 .app {
   background-image: linear-gradient(#6ba8a9, #1d4d4f);
   text-align: center;
