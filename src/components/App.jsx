@@ -17,9 +17,9 @@ class App extends Component {
   };
   handleAnswer = (index) => {
     if (index === this.state.correctChoice) {
-        alert("Correct!");
+      alert("Correct! Click Next to Continue");
     } else {
-        alert("Incorrect!");
+      alert("Incorrect! Try Again or Skip Question");
     }
   }
   render() {
