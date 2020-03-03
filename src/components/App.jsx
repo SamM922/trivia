@@ -13,11 +13,15 @@ class App extends Component {
     };
   }
   onNext = () => {
-    this.setState({
-      questionNumber: this.state.questionNumber + 1,
-      correctChoice: this.props.data[this.state.questionNumber + 1]
-        .correct_choice_index
-    });
+    if (this.state.questionNumber > 50) {
+        alert("This is the end of the questions. Thanks for playing!")
+    } else {
+      this.setState({
+        questionNumber: this.state.questionNumber + 1,
+        correctChoice: this.props.data[this.state.questionNumber + 1]
+          .correct_choice_index
+      });
+    }
   };
   onPrev = () => {
     if (this.state.questionNumber < 1) {
